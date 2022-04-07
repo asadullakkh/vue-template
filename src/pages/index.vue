@@ -1,5 +1,5 @@
 <template>
-  <div>hello {{ $t('name') }}</div>
+  <div class="bg-[red]">hello {{ $t('name') }}</div>
   <select v-model="lang">
     <option value="uz">uz</option>
     <option value="en">en</option>
@@ -27,4 +27,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
