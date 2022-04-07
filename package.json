@@ -32,6 +32,6 @@
   "description": "jest with vue3 vite",
   "main": "index.js",
   "repository": "https://git.uicgroup.tech/scm/tsul/tsul-frontend.git",
-  "author": "'Asadbek <'a.eshboev@uic.group'>",
+  "author": "'Asadbek Eshboev <'a.eshboev@uic.group'>",
   "license": "MIT"
 }

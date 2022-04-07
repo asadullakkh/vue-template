@@ -5,7 +5,7 @@
     <option value="en">en</option>
   </select>
 
-  <router-link to="/asad">asad</router-link>
+  <router-link to="/go">go</router-link>
 </template>
 
 <script>

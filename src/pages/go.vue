@@ -1,5 +1,5 @@
 <template>
-  <div>asad</div>
+  <div>Go</div>
   <router-link to="/">go back</router-link>
 </template>
 

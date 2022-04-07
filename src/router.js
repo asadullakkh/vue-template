@@ -5,8 +5,8 @@ export const routes = [
     component: () => import("~/pages/index.vue"),
   },
   {
-    path: "/asad",
-    meta: { title: "Asad" },
-    component: () => import("./pages/asad.vue"),
+    path: "/go",
+    meta: { title: "Go" },
+    component: () => import("./pages/go.vue"),
   },
 ];
