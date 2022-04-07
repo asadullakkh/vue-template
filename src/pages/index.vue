@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[red]">hello {{ $t('name') }}</div>
+  <div class="bg-[red] -700:bg-[blue]">hello {{ $t('name') }}</div>
   <select v-model="lang">
     <option value="uz">uz</option>
     <option value="en">en</option>
