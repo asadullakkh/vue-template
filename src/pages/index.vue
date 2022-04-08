@@ -23,6 +23,13 @@ export default {
       this.$i18n.locale = val
       localStorage.setItem('locale', val)
     }
+  },
+  methods: {
+    addParams(key, val) {
+      const queryParams = new URLSearchParams(window.location.search);
+      queryParams.set(key, val);
+      history.replaceState(null, null, '?' + queryParams.toString());
+    }
   }
 }
 </script>
