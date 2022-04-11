@@ -1,3 +1,4 @@
+import { createApp } from "vue";
 /**
  * Use this file to register any variables or functions that should be available globally
  * ideally you should make it available via the window object
@@ -6,5 +7,5 @@
  */
 const app = createApp({});
 app.config.globalProperties.$csl = (val) => {
-    console.log(val);
+  console.log(val);
 };

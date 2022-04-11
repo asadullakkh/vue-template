@@ -4,10 +4,14 @@
 
 <script>
 export default {
+  props: {
+    a: String,
+  },
+
   mounted() {
-    console.log('hello')
-  }
-}
+    console.log("hello");
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
