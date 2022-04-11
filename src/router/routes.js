@@ -7,6 +7,6 @@ export const routes = [
   {
     path: "/go",
     meta: { title: "Go" },
-    component: () => import("./pages/go.vue"),
+    component: () => import("~/pages/go.vue"),
   },
 ];
