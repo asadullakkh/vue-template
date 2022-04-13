@@ -7,14 +7,12 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-		"format": "prettier .  --write"
+		"format": "prettier .  --write",
+		"test": "jest"
 	},
 	"dependencies": {
-		"@types/jest": "^27.4.1",
 		"@vue/test-utils": "^2.0.0-rc.18",
 		"axios": "^0.26.1",
-		"jest": "^27.5.1",
-		"ts-jest": "^27.1.4",
 		"vite-plugin-webfont-dl": "^2.0.0",
 		"vue": "^3.2.25",
 		"vue-axios": "^3.4.1",
