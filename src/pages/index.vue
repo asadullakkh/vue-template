@@ -5,8 +5,8 @@
 	>
 		<span class="text-[50px]">Loading....</span>
 	</div>
-
 	<div v-else class="bg-[red] -700:bg-[blue]">hello {{ $t('posts') }}</div>
+	<HelloWorld :func="funcMethod" />
 	<select v-model="lang">
 		<option value="uz">uz</option>
 		<option value="en">en</option>
@@ -23,6 +23,7 @@ export default {
 		return {
 			lang: 'uz',
 			pending: true,
+			func: undefined,
 		};
 	},
 	computed: {
@@ -36,17 +37,19 @@ export default {
 			localStorage.setItem('locale', val);
 		},
 	},
-
 	async created() {
 		this.lang = localStorage.getItem('locale');
-
 		await Promise.allSettled([this.$store.dispatch('fetchPosts')]).finally(
 			() => {
 				this.pending = false;
 			},
 		);
-
 		console.log(this.posts, 'posts');
+	},
+	methods: {
+		funcMethod(val) {
+			console.log(val);
+		},
 	},
 };
 </script>
